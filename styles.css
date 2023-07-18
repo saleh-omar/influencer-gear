@@ -1,0 +1,243 @@
+* {
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+header {
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 120px;
+  text-align: center;
+}
+nav > ul {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin-left: 15px;
+  text-align: center;
+  color: #3a3a3a;
+}
+.nav-title {
+  color: #3a3a3a;
+}
+.banner {
+  display: flex;
+  padding: 0 120px;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 30px;
+}
+.banner-img img {
+  width: 70%;
+  padding-left: 33px;
+  padding-top: 87px;
+}
+.banner-img {
+  background-image: url(images/Circle\ design.svg);
+  width: 440px;
+  height: 440px;
+  border-radius: 440px;
+  border: 3px solid var(--brand-purple-100, #f1e4ff);
+  /* background-size: cover; */
+  background-size: contain;
+}
+.banner-title {
+  font-size: 52px;
+  color: #3a3a3a;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.banner-description {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 700;
+}
+.banner-btn {
+  padding: 10px 24px;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: 0;
+}
+/* ---------------------e-commerce----------------- */
+.e-commerce > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.e-commerce li {
+  list-style: none;
+  align-items: center;
+}
+.e-commerce {
+  margin: 170px 220px;
+}
+.card {
+  width: 300px;
+  height: 438px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px 10px 5px;
+}
+.card-img {
+  width: 100%;
+}
+.card-title {
+  font-size: 28px;
+  color: var(--text-gray-900, #18191f);
+  font-weight: 500;
+}
+.card-rice {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-weight: 400;
+}
+.collection-box {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.collection {
+  margin: 10px auto;
+  width: 70%;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.collection-title {
+  color: #3a3a3a;
+  font-size: 28px;
+  font-weight: 600;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.product {
+  display: flex;
+  width: 70%;
+  margin: 130px auto 0px;
+
+  height: 60vh;
+
+  justify-content: center;
+}
+.product-content {
+  margin-left: 50px;
+}
+.product-btn {
+  /* align-items: center; */
+  font-size: 16px;
+  background: #e02c6d;
+  color: white;
+  /* justify-content: center; */
+  text-align: center;
+  border: 0;
+  padding: 20px 25px;
+}
+.product-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.product-description {
+  margin-top: 0;
+}
+/* --------------------------footer----------------------------- */
+
+footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  background: #0a0826;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer-div {
+  text-align: center;
+}
+.footer-description {
+  color: var(--text-gray-300, #d9dbe1);
+  line-height: 24px;
+}
+@media screen and (max-width: 576px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    /* width: 350px;
+    height: 350px;
+    border-radius: 350px; */
+  }
+  .banner-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    border: 3px solid var(--brand-purple-100, #f1e4ff);
+  }
+  .banner-title {
+    font-size: 42px;
+    color: #3a3a3a;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .banner-description {
+    color: #3a3a3a;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .collection-box {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 540px;
+    height: 650px;
+  }
+  .card img {
+    width: 100%;
+  }
+  .collection {
+    margin: 0;
+  }
+  .product {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 12px;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+  .product-content {
+    margin-left: 0;
+    margin: 15px 0 15px;
+  }
+  .product-description {
+    margin-top: 0;
+    width: 95%;
+  }
+}
